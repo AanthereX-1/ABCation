@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Roboto:wght@100;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+:root {
+  --primary-color: #80d1f7;
+  --primary-dark: #003f5c;
+}
+
+
+
+/* navbar */
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar {
+  background: var(--primary-dark) !important;
+  padding: 1rem;
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+:root{
+    --primary-color:#80d1f7;
+}
+
+.inner .courses-title {
+    display: block;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin: 0rem 0;
+}
+
+.our-team .inner .courses-title{
+  line-height: 2rem;
+  display: block;
+  margin: 5rem;
+  font-size: 2rem !important;
+}
+
+.best {
+  /* text-decoration: overline; */
+  text-align: center;
+  display: inline-block;
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.our-team{
+    padding: 40px 0;
+    background: #ffffff;
+    color: #111;
+    text-align: center;
+  }
+
+  .our-team h1 {
+      font-weight: 500;
+        color: #111;
+  }
+
+  .courses-title {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    margin: 5rem 0;
+  }
+  
+  .courses-title .best {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--primary-color);
+  }
+  
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .btn {
+    background: var(--primary-dark);
+    color: #fff;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.5rem;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:focus,.btn:hover{
+    background: #002638;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  
+  .btn--block {
+    display: block;
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 4rem;
+    padding: 0;
+  }
+  .cards__item {
+    display: flex;
+    padding: 1rem 0;
+    margin:0 auto;
+    border: 1px solid #fff;
+  }
+  @media (min-width: 40rem) {
+    .cards__item {
+      width: 50%;
+      padding: 1rem 0;
+    }
+  }
+  @media (min-width: 56rem) {
+    .cards__item {
+      width: 33.3333%;
+      padding: 1rem;
+    }
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+  }
+  .card__image:hover{
+    filter: contrast(100%);
+  }
+  .card:hover {
+    box-shadow: 0 10px 20px -2px rgba(0, 0, 0, 0.30);
+    transform: translateY(-4px);
+  }
+  .card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--primary-color);
+  }
+  .card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(70%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  }
+  .card__image::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  @media (min-width: 40rem) {
+    .card__image::before {
+      padding-top: 66.6%;
+    }
+  }
+  .card__image--cloud {
+    background-image: url(./cloudcomp-image.jpeg);
+  }
+  .card__image--blockchain {
+    background-image: url(./blockchain-image.jpg);
+  }
+  .card__image--ai {
+    background-image: url(./ai-image.jpg);
+  }
+  .card__image--iot {
+    background-image: url(./iot-img.gif);
+  }
+  .card__image--data-science {
+    background-image: url(./data-science.jpg);
+  }
+  .card__image--cyber-security {
+    background-image: url(./cybersecurity.jpg);
+  }
+  .card__image--bitcoin {
+    background-image: url(./bitcoin.jpg);
+  }
+  .card__image--mern {
+    background-image: url(./mern.jpg);
+  }
+  .card__image--dart-flutter{
+    background-image: url(./dart-flutter.png);
+  }
+  .card__image--dockers-kubernetes {
+    background-image: url(./dockers-kubernetes.png);
+  }
+  .card__image--bigdata {
+    background-image: url(./bigdata.jpg);
+  }
+  .card__image--data-mining {
+    background-image: url(./datamining.jpg);
+  }
+  .card__image--full-php {
+    background-image: url(./php\ full\ stack.png);
+  }
+  .card__image--linux {
+    background-image: url(./linux.jpg);
+  }
+  .card__image--apache {
+    background-image: url(./apache-websrver.jpg);
+  }
+  .card__image--laravel {
+    background-image: url(./laravel.png);
+  }
+  .card__image--codeignator {
+    background-image: url(./codeignator.jpg);
+  }
+  .card__image--advance-laravel {
+    background-image: url(./advanced\ laravel.jpg);
+  }
+  .card__image--python {
+    background-image: url(./py-img.png);
+  }
+  .card__image--applied-ai {
+    background-image: url(./app-AI.jpg);
+  }
+  .card__image--elements-ai{
+    background-image: url(./eleemnts\ of\ ai.jpg);
+  }
+  .card__image--javascript {
+    background-image: url(./JS.png);
+  }
+  .card__image--jquery {
+    background-image: url(./jquery.png);
+  }
+  .card__image--git {
+    background-image: url(./git.jpg);
+  }
+  .card__image--mysql {
+    background-image: url(./mysql.png);
+  }
+  .card__image--mongodb {
+    background-image: url(./mongodb.jpg);
+  }
+  .card__image--nlp {
+    background-image: url(./nlp.jpg);
+  }
+  .card__image--dialog-flow {
+    background-image: url(./dialogflow.jpg);
+  }
+  .card__image--wordpress {
+    background-image: url(./wordpress.png);
+  }
+  .card__image--nodejs {
+    background-image: url(./nodejs\ with\ rest.png);
+  }
+  .card__image--javascript-google {
+    background-image: url(./jswithgoogle.jpg);
+  }
+  .card__image--freelancing {
+    background-image: url(./workfromhome.png);
+  }
+  .card__image--autocad {
+    background-image: url(./autocad.jpg);
+  }
+  .card__image--advance-excel {
+    background-image: url(./advance-excel.jpg);
+  }
+  .card__image--cluster-analysis {
+    background-image: url(./cluster.jpg);
+  }
+  .card__image--information-extraction {
+    background-image: url(./ai-image.jpg);
+  }
+  .card__title {
+    color: #696969;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .card__text {
+    flex: 1 1 auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+  
+
+  /* footer */
+
+.site-footer
+{
+  background-color:var(--primary-dark);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:rgb(224, 224, 224);
+  opacity:0.8;
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:1.7rem;
+  font-weight: 700;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer p{
+  color: rgb(185, 185, 185);
+}
+
+.flex-cont {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.flex-cont .lower{
+    text-transform: lowercase;
+}
+
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:var(--primary-color);
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+text-decoration: none;
+  color:rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:var(--primary-color);
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block;
+}
+.site-footer .social-icons
+{
+  text-align:right;
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:var(--primary-color);
+}
+.copyright-text
+{
+  margin:0;
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px;
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0;
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center;
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#111;
+  color:#111;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998;
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced;
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6;
+}
+.social-icons a.website:hover
+{
+  background-color: var(--primary-color);
+}
+@media (max-width:768px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+/* about us who we are */
+
+.left-sect {
+    margin: auto;
+    max-width: 55ch;
+}
+
+.left-sect h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin: 0 0 1.8rem 0;
+}
+
+.left-sect p {
+    font-size: 0.9rem;
+    color: rgb(109, 109, 109);
+    line-height: 1.8rem;
+}
+
+
+.right-sect {
+    background: url(./bg-about-us.jpg) no-repeat;
+    width: 550px;
+    height: 550px;
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width:768px) {
+
+    .left-sect {
+        margin-top: 5rem;
+        margin-bottom:0;
+    }
+} 
